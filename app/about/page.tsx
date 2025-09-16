@@ -1,7 +1,8 @@
+"use client";
 import { useRef } from "react";
-import { Skills } from "@/component/Skills/Skills";
-import { useIsVisible } from "~/utils/useIsVisible";
-import { Inspirations } from "./Inspirations/Inspirations";
+import { Skills } from "@/app/components/Skills/Skills";
+import { useIsVisible } from "@/app/utils/useIsVisible";
+import { Inspirations } from "./components/Inspirations/Inspirations";
 
 const AboutPage = () => {
   const heroRef = useRef<HTMLDivElement | null>(null);
@@ -46,7 +47,7 @@ const AboutPage = () => {
             </div>
             <img
               alt=""
-              src="/assets/profile.jpg"
+              src="/assets/profile_02.jpg"
               className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
             />
           </div>
