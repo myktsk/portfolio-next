@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 
 export function useIsVisible(ref: React.RefObject<HTMLElement | null> | null) {

@@ -1,3 +1,4 @@
+"use client";
 import { useRef } from "react";
 import { WORKS } from "@/app/models/works/works.const";
 import { useIsVisible } from "@/app/utils/useIsVisible";

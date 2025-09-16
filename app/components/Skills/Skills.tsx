@@ -1,4 +1,4 @@
-import { HARD_SKILLS, SOFT_SKILLS } from "~/models/skills/skills.const";
+import { HARD_SKILLS, SOFT_SKILLS } from "@/app/models/skills/skills.const";
 
 type Props = {
   visible: boolean;
