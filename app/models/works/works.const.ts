@@ -2,7 +2,7 @@ import type { Work } from "./works.types";
 
 export const WORKS: Work[] = [
   {
-    id: "2025_01",
+    id: "5",
     title: "Sales Dashboard for Restaurants",
     category: "Web Application",
     role: "UX Design, Frontend, Backend",
@@ -16,7 +16,7 @@ export const WORKS: Work[] = [
     image: "/assets/works/sales-dashboard.jpg",
   },
   {
-    id: "1",
+    id: "4",
     title: "Strap - Online Whiteboard Tool",
     category: "Web Application",
     url: "https://product.strap.app/",
@@ -31,7 +31,7 @@ export const WORKS: Work[] = [
     image: "/assets/works/strap.png",
   },
   {
-    id: "2",
+    id: "3",
     title: "Huddler - Information Management Tool",
     category: "Web Application",
     url: "https://service.huddler.app/",
@@ -45,7 +45,7 @@ export const WORKS: Work[] = [
     ],
   },
   {
-    id: "3",
+    id: "2",
     title: "KINTON RAMEN Official Website",
     category: "Website",
     url: "https://kintonramen.com/",
@@ -59,7 +59,7 @@ export const WORKS: Work[] = [
     ],
   },
   {
-    id: "4",
+    id: "1",
     title: "KINKA SUSHI BAR IZAKAYA Official Website",
     category: "Website",
     url: "https://kinkaizakaya.com/",

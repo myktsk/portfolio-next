@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import { WORKS } from "@/app/models/works/works.const";
 import { useIsVisible } from "@/app/utils/useIsVisible";
+import Link from "next/link";
 
 const Works = () => {
   const heroRef = useRef<HTMLDivElement | null>(null);
@@ -35,7 +36,7 @@ const Works = () => {
         >
           {WORKS.map((work) => (
             <li key={work.title}>
-              <NavLink to={`/work/${work.id}`}>
+              <Link href={`/work/${work.id}`}>
                 <img
                   alt=""
                   src={work.image}
@@ -48,7 +49,7 @@ const Works = () => {
                 <p className="mt-2 text-base/7 text-gray-600">
                   {work.techStacks.join(", ")}
                 </p>
-              </NavLink>
+              </Link>
             </li>
           ))}
         </ul>
