@@ -6,7 +6,7 @@ export const WORKS: Work[] = [
     title: "Sales Dashboard for Restaurants",
     category: "Web Application",
     role: "UX Design, Frontend, Backend",
-    techStacks: ["React", "NextJS", "TypeScript", "Firebase"],
+    techStacks: ["React", "NextJS", "TypeScript", "Firebase", "OpenAI API"],
     description: [
       "Designed system architecture, data structures, and databases (Postgres, Firestore) to support scalable operations",
       "Led end-to-end development: UI/UX design and front-end (Next.js, React, TypeScript, Tailwind CSS, Zustand, Nivo) integrated with back-end services (Node.js, SQL, Firestore, Cloud Functions)",
