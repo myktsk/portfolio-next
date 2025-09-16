@@ -1,8 +1,25 @@
-import type { Work } from "@/app/models/works/works.types";
+import { WORKS } from "@/app/models/works/works.const";
 
-type Props = Promise<{ slug: string }>;
+export const generateStaticParams = () => {
+  return WORKS.map((work) => ({
+    id: work.id,
+  }));
+};
 
-const WorkDetailPage = ({ work }: Props) => {
+type Props = {
+  params: {
+    id: string;
+  };
+};
+
+const WorkDetailPage = async ({ params }: Props) => {
+  const { id } = await params;
+  const work = WORKS.find((work) => work.id === id);
+
+  if (!work) {
+    return <div>Work not found</div>;
+  }
+
   return (
     <main className="bg-gray-100">
       <div className="bg-gray-300 rounded-b-[100px] relative overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14 before:absolute before:inset-0 before:bg-[url('/assets/noise-light.png')]">
